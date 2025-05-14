@@ -22,37 +22,37 @@ const App = () => {
 
     return (
         <div style={{ position: "relative", width: "100%", height: "100vh", overflow: "hidden" }}>
-            {/* Background Video */}
-            <video 
-                autoPlay 
-                loop 
-                muted 
+            {/* Video Background */}
+            <video
+                autoPlay
+                loop
+                muted
                 style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
                     position: "absolute",
                     top: 0,
                     left: 0,
-                    zIndex: -1
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    zIndex: -1,
                 }}
             >
-                <source src="your-video.mp4" type="video/mp4" />
+                <source src="/background.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-
-            {/* Main Content */}
+            {/* Centered Main Content with Opaque Padding */}
             <div 
                 style={{
-                    position: "relative",
-                    zIndex: 1,
-                    backgroundColor: "rgba(255, 255, 255, 0.8)", // Semi-transparent
-                    padding: "20px",
-                    borderRadius: "10px",
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    backgroundColor: "rgba(255, 255, 255, 0.9)", // More opaque background
+                    padding: "30px",
+                    borderRadius: "12px",
                     textAlign: "center",
-                    maxWidth: "800px",
-                    margin: "50px auto",
-                    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)"
+                    maxWidth: "600px",
+                    boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.3)"
                 }}
             >
                 <h1>Student Recording System</h1>
