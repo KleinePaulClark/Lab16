@@ -70,7 +70,7 @@ const App = () => {
             {/* Opaque Container */}
             <div
                 style={{
-                    backgroundColor: "rgba(237, 234, 221, 0.7)",  // Opaque background
+                    backgroundColor: "rgba(244, 242, 220, 0.7)",  // Opaque background
                     borderRadius: "10px",
                     padding: "20px",
                     maxWidth: "800px",
